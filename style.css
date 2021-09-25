@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto Mono',monospace;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+  
+  .container {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-notas {
+      width: 800px;
+      object-fit: cover;
+  }
+  
+  .page-title {
+    color:#EA5873;
+    margin: 0 0 5px;
+    font-size: 50px;
+  }
+  
+  .page-subtitle {
+    color:#161616;
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  
+  /* .page-logo {
+    margin-top: 20px;
+    width: 200px;
+    cursor: pointer;
+  } */
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    filter: brightness(0);
+  }
+
+  .media-aluno {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #1900a8;
+    padding: 2px 10px;
+    color: #ffffff;
+  }
+  .btn {
+    padding: 6px 22px;
+    background-color: #EA5873;
+    font-size: 17px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: #da3755;
+  }
+
+  @media (max-width:560px) {
+    .page-title {
+      font-size: 40px;
+      text-align: center;
+    }
+    .page-subtitle {
+      margin-top: 5px;
+      font-size: 15px;
+    }
+    .img-notas {
+      width: 600px;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width:560px) {
+    .img-notas {
+      width: 500px;
+      object-fit: cover;
+      overflow: hidden;
+    }
+  }
